@@ -38,5 +38,25 @@ button:hover {
     background-color: #CCC;
     transform: translateY(-1px);
 }
+img {
+    border: 5px solid rgb(133, 126, 182);
+    border-radius: 5px;
+}
+table {
+    color: #9b9b9b;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #CCC;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #CCC;
+}
+#antimatter {
+    background-color: #000;
+    border: 1px solid #1f1f1f;
+    padding: 5px;
+}
 #ex {color: #ff0000;}
 #biglol {font-size: 1.25em;}
