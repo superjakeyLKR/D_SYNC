@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        function onLoad() {
+            var randoms = document.getElementsByClassName("random");
+            for (var i = 0; i < randoms.length; i++) {
+                randoms[i].innerHTML = RandomLetters(50);
+            }
+        }
+        function RandomLetters(length) {
+            var letters = "QWERTYUIOPASDFGHJKLZXCVBNM";
+            var result = "";
+            for (var i = 0; i < length; i++) {
+                result += letters[Math.floor(Math.random() * letters.length)];
+            }
+            return result;
+        }
+    </script>
+</head>
+<body onload="onLoad()">
+    <p>Ok, on to the third question. This is supposed to be a puzzle game, but random questions never hurt anyone.</p>
+    <p>One of the letters below is slightly bigger than all of the others.</p>
+    <p><span id="biglol">T</span>ry find it!</p>
+    <p class="random">Loading...</p>
+    <p class="random">Loading...</p>
+    <p class="random">Loading...</p>
+    <p class="random">Loading...</p>
+    <p class="random">Loading...</p>
+    <p>They're randomised, by the way!</p>
+</body>

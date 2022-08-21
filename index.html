@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>D_SYNC</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: black">
+<body>
     <h1>Project: D_SYNC</h1>
     <h2>How to Play:</h2>
-    <p>Find the hidden word or phrase in each puzzle and enter it into the url to proceed.</p>
+    <p>Find the hidden word or phrase in each puzzle and enter it into the URL to proceed.</p>
     <h2>How to Enter:</h2>
-    <p>Enter the url in the address bar of your browser after the https://superjakeylkr.github.io/D_SYNC/.</p>
+    <p>Enter the URL in the address bar of your browser after the https://superjakeylkr.github.io/D_SYNC/LEVELNAME/</p>
     <p>Add .html to the end of the word, unless specified otherwise.</p>
-    <button id="start">Start Game</button>
+    <p>Example:
+        <br>The answer is 1.
+        <br>https://superjakeylkr.github.io/D_SYNC/level1/
+        <br>goes to
+        <br>https://superjakeylkr.github.io/D_SYNC/level1/<span id="ex">1.html</span></p>
+    <p>If a page saying 404 shows up, that means that you are incorrect, or have entered the answer in incorrectly.</p>
+    <button onclick="window.location.href='level1/1.html'">Start Game</button>
 </body>
 </html>
