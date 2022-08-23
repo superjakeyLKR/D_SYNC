@@ -1,2 +1,15 @@
-function _0x5401(_0x40da1d,_0xc549c5){var _0x2bec73=_0x2bec();return _0x5401=function(_0x5401db,_0xf00623){_0x5401db=_0x5401db-0x1c4;var _0x73360a=_0x2bec73[_0x5401db];return _0x73360a;},_0x5401(_0x40da1d,_0xc549c5);}(function(_0x540165,_0x405d76){var _0x4652f0=_0x5401,_0x1be9a1=_0x540165();while(!![]){try{var _0x45a900=-parseInt(_0x4652f0(0x1cc))/0x1*(parseInt(_0x4652f0(0x1c5))/0x2)+-parseInt(_0x4652f0(0x1cb))/0x3*(parseInt(_0x4652f0(0x1c7))/0x4)+parseInt(_0x4652f0(0x1ca))/0x5*(parseInt(_0x4652f0(0x1c8))/0x6)+-parseInt(_0x4652f0(0x1c9))/0x7*(parseInt(_0x4652f0(0x1c6))/0x8)+-parseInt(_0x4652f0(0x1ce))/0x9*(parseInt(_0x4652f0(0x1cd))/0xa)+parseInt(_0x4652f0(0x1d0))/0xb+parseInt(_0x4652f0(0x1c4))/0xc;if(_0x45a900===_0x405d76)break;else _0x1be9a1['push'](_0x1be9a1['shift']());}catch(_0x439390){_0x1be9a1['push'](_0x1be9a1['shift']());}}}(_0x2bec,0xce500));function _0x2bec(){var _0x18e297=['1330832tvhpEC','18Xzlmbc','7fSmwvt','211285AFjkCf','12oaMimR','2cpgOOG','20yizAUY','1449243YHsUql','setItem','4439171CaCTwv','43310712Qbwlvz','971662EagLnX','5359632AitMJJ'];_0x2bec=function(){return _0x18e297;};return _0x2bec();}function antimatter(_0x5e46c7){var _0x258b95=_0x5401;localStorage[_0x258b95(0x1cf)]('antimatter'+_0x5e46c7,_0x5e46c7);}
-//Try and figure out what this does lol
+const MAX=10;
+function antimatter(num){
+    localStorage.setItem("antimatter"+num,true);
+    document.getElementById("toast").style.opacity="100%";
+    document.getElementById("amount").innerText=getAntimatterButtons();
+}
+function getAntimatterButtons(){
+    let amount=0;
+    for(i=1;i<MAX;i++){
+        if(localStorage.getItem("antimatter"+i)){amount++;}
+    }
+    if(localStorage.getItem("antimatter1024")){amount++;} //template one
+    return amount+"/"+MAX;
+}
+console.log("TEST")

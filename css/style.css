@@ -58,5 +58,30 @@ th, td {
     border: 1px solid #1f1f1f;
     padding: 5px;
 }
+#antimatter_text {
+    font-size: 1.2em;
+    background-color: #000;
+    color: #9b9b9b;
+    border: 0px;
+    padding: 0px;
+}
+#toast {
+    font-size: 1.2em;
+    color: #000;
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
 #ex {color: #ff0000;}
 #biglol {font-size: 1.25em;}
+div.sevenhtm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.sevenhtm > p {
+    border: 1px solid #9b9b9b;
+    padding: 10px 40px;
+    font-size: 4em;
+}
