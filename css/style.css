@@ -85,3 +85,16 @@ div.sevenhtm > p {
     padding: 10px 40px;
     font-size: 4em;
 }
+div.certificate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+    padding: 10px 40px;
+    font-size: 2em;
+}
+div.certificate > p {
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+}
